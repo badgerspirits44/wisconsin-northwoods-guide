@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Price County Weather Chrome Extension</title>
+    <meta name="description" content="Privacy policy for the Price County Weather Chrome extension.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, 'Times New Roman', serif; background: #f5f0e8; color: #2c2416; line-height: 1.8; }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #8b4513; }
+        h1 { font-size: 2.2em; color: #1a0f00; margin-bottom: 8px; }
+        h2 { font-size: 1.4em; color: #3d2b1f; margin: 30px 0 15px; border-bottom: 1px solid #d4c4a8; padding-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        a { color: #8b4513; }
+        ul { margin: 0 0 16px 20px; }
+        li { margin-bottom: 8px; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #d4c4a8; font-size: 0.85em; color: #6b4c2a; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Privacy Policy</h1>
+        <p>Price County Weather Chrome Extension</p>
+    </header>
+
+    <p><strong>Last updated:</strong> July 24, 2026</p>
+
+    <p>The Price County Weather Chrome extension ("the extension") is provided by PriceCounty.fun at no cost. This privacy policy describes how the extension handles data.</p>
+
+    <h2>Data Collection</h2>
+    <p>The extension does <strong>not</strong> collect, store, or transmit any personally identifiable information, health information, financial information, authentication data, personal communications, web history, user activity, or website content.</p>
+
+    <h2>Data Storage</h2>
+    <p>The extension uses Chrome's local storage API to save:</p>
+    <ul>
+        <li>Your preferred Price County location (one of: Park Falls, Phillips, Fifield, Prentice, or Catawba)</li>
+        <li>Your temperature unit preference (Fahrenheit or Celsius)</li>
+        <li>Cached weather data from the most recent fetch (for instant popup display)</li>
+    </ul>
+    <p>All stored data remains on the user's device. No data is synced to the cloud or transmitted to any server.</p>
+
+    <h2>Data Transmission</h2>
+    <p>The extension fetches weather data from two public APIs:</p>
+    <ul>
+        <li><strong>OpenWeatherMap API</strong> (api.openweathermap.org) — sends geographic coordinates (latitude/longitude) for the selected Price County city to retrieve current conditions and 5-day forecast</li>
+        <li><strong>NWS API</strong> (api.weather.gov) — sends a zone identifier (WIZ011) to retrieve active severe weather alerts for Price County</li>
+    </ul>
+    <p>No user data, browsing data, or personal information is sent to these APIs. Only geographic coordinates for Price County cities are transmitted.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+        <li><strong>alarms</strong> — Used to schedule periodic weather data refreshes every 30 minutes</li>
+        <li><strong>storage</strong> — Used to save location and unit preferences locally</li>
+        <li><strong>Host permissions</strong> (api.openweathermap.org, api.weather.gov) — Used to fetch weather data and alerts</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>The extension fetches data from OpenWeatherMap and the National Weather Service. These services may have their own privacy policies. The extension does not share your data with these services — it only sends city coordinates and zone identifiers.</p>
+
+    <h2>Data Sales and Transfers</h2>
+    <ul>
+        <li>We do not sell or transfer user data to third parties</li>
+        <li>We do not use user data for purposes unrelated to the extension's single purpose (displaying Price County weather)</li>
+        <li>We do not use user data to determine creditworthiness or for lending purposes</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The extension does not collect any data from users, including children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, contact clawd@jmjwebsitedesign.com or visit <a href="https://pricecounty.fun">pricecounty.fun</a>.</p>
+
+    <footer>
+        <p>&copy; 2026 PriceCounty.fun. Price County, Wisconsin.</p>
+    </footer>
+</div>
+</body>
+</html>

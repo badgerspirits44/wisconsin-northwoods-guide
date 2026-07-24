@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price County Weather — Chrome Extension</title>
+    <meta name="description" content="Price County Weather is a free Chrome extension that displays current weather conditions and forecast for Price County, Wisconsin directly in your browser toolbar.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, 'Times New Roman', serif; background: #f5f0e8; color: #2c2416; line-height: 1.8; }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #8b4513; }
+        h1 { font-size: 2.2em; color: #1a0f00; margin-bottom: 8px; }
+        .subtitle { font-style: italic; color: #6b4c2a; font-size: 1.1em; }
+        h2 { font-size: 1.4em; color: #3d2b1f; margin: 30px 0 15px; border-bottom: 1px solid #d4c4a8; padding-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        a { color: #8b4513; }
+        ul { margin: 0 0 16px 20px; }
+        li { margin-bottom: 8px; }
+        .badge { display: inline-block; background: #2c2416; color: #f5f0e8; padding: 4px 12px; border-radius: 4px; font-size: 0.9em; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #d4c4a8; font-size: 0.85em; color: #6b4c2a; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Price County Weather</h1>
+        <p class="subtitle">A free Chrome extension for Wisconsin's Northwoods</p>
+    </header>
+
+    <p>Price County Weather brings real-time weather for Price County, Wisconsin directly to your Chrome toolbar. The extension badge shows the current temperature at a glance — no need to open a weather app or website.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Temperature badge</strong> — Current temp displayed in the extension icon, updated every 30 minutes</li>
+        <li><strong>Full conditions</strong> — Click the icon for current weather, feels-like temperature, wind speed/direction, humidity, visibility, and barometric pressure</li>
+        <li><strong>24-hour forecast</strong> — Hourly forecast for the next 24 hours with icons and descriptions</li>
+        <li><strong>Severe weather alerts</strong> — Active NWS alerts for Price County (Zone WIZ011) shown in the popup</li>
+        <li><strong>5 locations</strong> — Switch between Park Falls, Phillips, Fifield, Prentice, and Catawba</li>
+        <li><strong>Units toggle</strong> — Fahrenheit or Celsius</li>
+    </ul>
+
+    <h2>Data Sources</h2>
+    <ul>
+        <li>Current conditions and forecast: <a href="https://openweathermap.org">OpenWeatherMap</a></li>
+        <li>Severe weather alerts: <a href="https://www.weather.gov">National Weather Service (NWS)</a></li>
+    </ul>
+
+    <h2>Install</h2>
+    <p>Install Price County Weather from the <a href="https://chrome.google.com/webstore">Chrome Web Store</a>. Search for "Price County Weather" or visit our listing page.</p>
+
+    <h2>Support</h2>
+    <p>For questions, bug reports, or feature requests, visit <a href="https://pricecounty.fun/about-our-reporting/">pricecounty.fun</a> or email clawd@jmjwebsitedesign.com.</p>
+
+    <h2>Privacy</h2>
+    <p>This extension does not collect, store, or transmit any personal data. It fetches weather data from public APIs (OpenWeatherMap and NWS) using geographic coordinates for Price County cities. Your location preference and unit settings are stored locally on your device. See our <a href="privacy-policy.html">privacy policy</a>.</p>
+
+    <h2>About</h2>
+    <p>Built by <a href="https://pricecounty.fun">PriceCounty.fun</a> — local news and information for Price County, Wisconsin. Where the weather shapes everything from snowmobile trails to fishing conditions.</p>
+
+    <footer>
+        <p>&copy; 2026 PriceCounty.fun. Price County, Wisconsin.</p>
+    </footer>
+</div>
+</body>
+</html>
