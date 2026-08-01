@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — ChatGPT Search Revealer Extension</title>
+    <meta name="description" content="Privacy policy for the ChatGPT Search Revealer browser extension. The extension does not collect, store, or transmit personal data.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, 'Times New Roman', serif; background: #f5f0e8; color: #2c2416; line-height: 1.8; }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #8b4513; }
+        h1 { font-size: 2.2em; color: #1a0f00; margin-bottom: 8px; }
+        h2 { font-size: 1.4em; color: #3d2b1f; margin: 30px 0 15px; border-bottom: 1px solid #d4c4a8; padding-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        a { color: #8b4513; }
+        ul { margin: 0 0 16px 20px; }
+        li { margin-bottom: 8px; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #d4c4a8; font-size: 0.85em; color: #6b4c2a; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Privacy Policy</h1>
+        <p>ChatGPT Search Revealer Browser Extension</p>
+    </header>
+
+    <p><strong>Last updated:</strong> August 1, 2026</p>
+
+    <p>The ChatGPT Search Revealer browser extension ("the extension") is provided at no cost. This privacy policy describes how the extension handles data.</p>
+
+    <h2>Data Collection</h2>
+    <p>The extension does <strong>not</strong> collect, store, or transmit any personally identifiable information, health information, financial information, authentication data, personal communications, web history, user activity, or website content.</p>
+
+    <h2>What the Extension Does</h2>
+    <p>The extension intercepts the streaming response from ChatGPT's <code>/backend-api/conversation</code> endpoint within the user's browser tab. It parses the Server-Sent Events (SSE) stream that ChatGPT is already sending to the user's browser, looking for web search queries, search results, and citations that ChatGPT generates but does not display by default. These are shown in a floating panel overlaid on the ChatGPT page.</p>
+
+    <p>All processing happens locally in the browser. No data is sent to any external server.</p>
+
+    <h2>Data Storage</h2>
+    <p>The extension uses the browser's local storage API to save:</p>
+    <ul>
+        <li>Panel state (expanded/collapsed) for the current session</li>
+        <li>Captured search entries for display within the current page session</li>
+    </ul>
+    <p>All stored data remains on the user's device and is cleared when the tab is closed. No data is synced to the cloud or transmitted to any server.</p>
+
+    <h2>Data Transmission</h2>
+    <p>The extension makes <strong>no additional network requests</strong>. It only reads the response stream that ChatGPT is already sending to the user's browser. The extension does not transmit any data — not search queries, not results, not user input, not browsing data — to any server. All data stays in the user's browser tab.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+        <li><strong>storage</strong> — Used to save panel display state locally</li>
+        <li><strong>Content script host permissions</strong> (chatgpt.com, chat.openai.com) — The content script runs only on ChatGPT pages to intercept the response stream and display the panel</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>The extension does not use any third-party services. No analytics, no advertising, no tracking SDKs, and no remote data fetching of any kind. The extension does not communicate with any server other than the ChatGPT page the user is already visiting.</p>
+
+    <h2>Data Sales and Transfers</h2>
+    <ul>
+        <li>We do not sell or transfer user data to third parties</li>
+        <li>We do not use user data for purposes unrelated to the extension's single purpose (revealing ChatGPT's hidden web searches)</li>
+        <li>We do not use user data to determine creditworthiness or for lending purposes</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The extension does not collect any data from users, including children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, contact clawd@jmjwebsitedesign.com.</p>
+
+    <footer>
+        <p>&copy; 2026 ChatGPT Search Revealer. Not affiliated with OpenAI.</p>
+    </footer>
+</div>
+</body>
+</html>
